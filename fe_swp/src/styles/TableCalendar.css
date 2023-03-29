@@ -1,0 +1,90 @@
+:root {
+  --cl-1: #222831;
+  --cl-2: #393e46;
+  --cl-3: #00adb5;
+  --cl-4: #eeeeee;
+  --gb-grd: linear-gradient(
+    to right top,
+    #00adb5,
+    #2197a8,
+    #338196,
+    #3c6b80,
+    #3f5768,
+    #3c4c5b,
+    #38424e,
+    #333841,
+    #2f343d,
+    #2a3039,
+    #262c35,
+    #222831
+  );
+}
+
+.TableCalendar {
+  color: var(--cl-4);
+  width: 100%;
+  background-color: var(--cl-2);
+
+  /* height: 65vh; */
+  box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header-TableCalendar {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 6px 6px 0 0;
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+.nav {
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  border-radius: 99px;
+  outline: 0;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.nav:hover {
+  background-color: var(--cl-2);
+}
+.datetime {
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.week-container,
+.day-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.week-cell,
+.day-cell {
+  flex: 0 0 calc(100% / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+.day-cell--picking {
+  border-radius: 99px;
+  background-color: #1abc9c;
+  color: #fff;
+  font-weight: bold;
+}
+.day-cell--today {
+  border-radius: 99px;
+  border: #1abc9c solid 1px;
+  color: #fff;
+  font-weight: bold;
+}
+.day-cell--faded {
+  opacity: 0.4;
+}

@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+.main-content {
+  height: 90vh;
+  width: 100vw;
+  background-image: url("https://haycafe.vn/wp-content/uploads/2021/12/Hinh-anh-dep-Powerpoint.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  float: right;
+  width: 85%;
+  height: 100vh;
+}

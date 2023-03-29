@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tasksdetail {
+  background-color: white;
+  position: relative;
+  width: 78vw;
+  height: 80vh;
+  margin: 5vh auto;
+  box-shadow: 2px 2px 2px rgb(158, 153, 153);
+  border-radius: 20px;
+  text-align: left;
+}
+.taskheader {
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+.taskheader h1 {
+  margin: 10px 30px;
+  width: 60vw;
+  height: 6vh;
+}
+#icon_tasks {
+  margin: auto 1vw;
+  font-size: 24px;
+}
+.icons_task {
+  cursor: pointer;
+  margin: 0 5px;
+}
+.taskcontent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.left {
+    width: 70%;
+    padding-top: 12vh;
+    padding-left: 2vw;
+    border-right: 1px solid rgb(129, 125, 125);
+    box-shadow: 2px 0 1px rgb(179, 174, 174);
+}
+.right {
+    width: 30%;
+    padding-top: 12vh;
+
+    
+}
+.right > h4 > span {
+    font-weight: none;
+    margin-left: 10px;
+}
+.des,
+.status,
+.tag {
+  margin: 10px 0;
+}
+.des p {
+  margin: 10px 10px;
+}
+.menu_task {
+  display: flex;
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 1px white;
+  border-radius: 10px;
+  z-index: 3;
+}
+.input_title {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 32px;
+}
+.tagh3 {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.tagh4 {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.textare {
+    margin-top: 30px;
+    width: 78%;
+    resize: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 10px;
+}
+.time_tas {
+    width: 100%;
+    padding: 30px 20px;
+    border-bottom: 1px solid rgb(129, 125, 125);
+    box-shadow: 2px 1px 0 rgb(179, 174, 174) ;
+
+}
+.projectinfo {
+    width: 100%;
+    padding: 30px 20px;
+}
+.viewnow {
+  margin-left:20px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.viewnow:hover {
+  color: rgb(0, 110, 255);
+  transform: 0.5s;
+  border-bottom: 1px solid rgb(0, 110, 255);
+}

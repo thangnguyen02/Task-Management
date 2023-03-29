@@ -1,0 +1,65 @@
+.Task-Detail{
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 1px 2px 3px 4px rgba(0, 0, 0, .1);
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 30px;
+}
+.Task-Detail-Title{
+    color: var(--cl-3);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pin-task-icon{
+    font-size: 30px;
+    transform: rotate(30deg);
+}
+.pin-task-icon:hover{
+    
+    color: var(--cl-3);
+}
+.pin-task-false{
+    color: rgba(148, 148, 148, 0.3);
+}
+.pin-task-true{
+    color: var(--cl-3);
+}
+.Task-description{
+    margin-top: 10px;
+    width: 80%;
+    text-align: left;
+    color: gray;
+    height: 90px;
+}
+
+.Task-detail-status{
+    display: flex;
+}
+
+.Task-Line-3{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.CommendIcon{
+    display: flex;
+    color: var(--cl-3);
+}
+.AttackIcon{
+    
+    color: var(--cl-3);
+}
+
+.PeopleJoin{
+    display: flex;
+}
+.PeopleJoin-img{
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}

@@ -1,0 +1,73 @@
+.big_btn {
+  height: 15vh;
+  width: 12vw;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn_share {
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #6c5dd3;
+  cursor: pointer;
+}
+.project_component {
+  height: 92vh;
+  text-align: start;
+  padding-top: 5vh;
+  padding-left: 20vw;
+  width: 100vw;
+}
+.big_btns {
+  display: flex;
+  width: 30vw;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+.your_pr {
+  padding-top: 2vh;
+  width: 75vw;
+  display: flex;
+  overflow: auto; /* or overflow: scroll; */
+  padding-bottom: 2vh;
+  /* add margin to the div */
+}
+.project {
+  cursor: pointer;
+  text-align: center;
+  min-width: 20vw;
+  margin-right: 5vw;
+  display: inline-block;
+  margin-top: 5vh;
+  border-radius: 20px;
+}
+.project_img {
+  padding: 8vh 0;
+  border-radius: 20px 20px 0px 0px;
+  background-color: rgb(235, 122, 122);
+}
+.project_title {
+  padding: 3vh 0;
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+}
+/* custom scroll bar */
+/* webkit-based browsers */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  margin-top: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 5px;
+}

@@ -1,0 +1,38 @@
+.name,
+.description {
+  margin: 20px 30px;
+}
+#tag,
+#checklist,
+#attachment {
+  margin: 20px 30px;
+}
+.box {
+  position: relative;
+}
+#modal-footer {
+  text-align: right;
+  margin: 30px 20px;
+}
+.textadd {
+  margin: 20px 0;
+}
+#modal-content {
+  min-height: 58vh;
+}
+#other-information {
+  min-height: 20vh;
+}
+.checkListElement {
+  margin: 10px 20px;
+}
+.checkList {
+  margin-top: 15px;
+}
+.delete {
+  margin: 15px 10px;
+  cursor: pointer;
+}
+.date {
+  margin: 10px 10px;
+}

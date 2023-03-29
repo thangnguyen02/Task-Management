@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.content {
+    padding-bottom: 20vh;
+    overflow: hidden;
+    
+}
+.content-header {
+    margin: 20px 0;
+    text-align: left;
+}
+#buttonOpenModal {
+    margin-left: 4vw;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 2px solid yellow;
+    transition: 0.5s;
+    color: yellow;
+    font-size: 23px;
+}
+#buttonOpenModal:hover {
+    color: red;
+    border-bottom: 2px solid red;
+    transition: 0.5s;
+}
+.element {
+     width: 30%;
+     margin: 0 10px;
+     text-align: left;
+}
+
+.today {
+    width: 20vw;
+    margin: auto;
+    text-align: left;
+}
+.date-box {
+    width: 21vw;
+    height: 24vw;
+    background-color: white;
+    
+    border-radius: 20px;
+}
+.month,.day {
+    text-align: center;
+}
+.month {
+    margin-top: 20px;
+    font-size: 60px;
+}
+.day {
+    font-size: 120px;
+}
+.dashboard-content {
+    display: flex;
+    margin-top: 3%;
+}
+.task-today {
+    width: 24vw;
+    margin: auto;
+    text-align: left;
+    height: 65vh;
+    overflow: auto;
+    background: rgba(172, 175, 175, 0.3);
+    box-shadow: 2px 2px 2px rgb(155, 152, 152);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.tasks {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.tasksPin {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+.tasktitle {
+    padding: 10px 20px;
+}
+.taskdescription {
+    padding: 0px 10px;
+    width: 100%;
+}
+.pin-task { 
+    width: 24vw;
+    margin: auto;
+    text-align: left;
+    height: 65vh;
+    overflow: auto;
+    background: rgba(172, 175, 175, 0.3);
+    box-shadow: 2px 2px 2px rgb(155, 152, 152);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.menu_task {
+    display: flex;
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px white;
+    border-radius: 10px;
+    z-index: 3;
+}
+.menu_task ul {
+    list-style: none;
+    margin: 0px 20px;
+}
+.menu_task ul li{
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+}
+#userJoin ul {
+    list-style-type: none;
+    display: flex;
+}
+#userJoin ul li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #adadad;
+}
+#footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 20px;
+    margin: 5px 0;
+    z-index: 0;
+}
+.iconTask {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #adadad;
+    transition: 0.5s;
+}
+.iconTask:hover {
+    color: black;
+    transition: 0.5s;
+}
+.titleabc {
+    color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin: auto;
+}

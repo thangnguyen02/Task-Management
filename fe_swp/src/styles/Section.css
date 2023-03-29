@@ -1,0 +1,105 @@
+.btnOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #becff0;
+  height: 4vh;
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+.frmAdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #becff0;
+  /* height: 25vh; */
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2vh;
+}
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  transition: 0.5s;
+}
+.content_section {
+  height: 90%;
+  overflow: auto;
+  transition: 0.5s;
+}
+/* custom scroll bar */
+/* webkit-based browsers */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  margin-top: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 5px;
+}
+.title {
+  margin: 10px 10px;
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.describe {
+  margin: 0px 10px;
+  padding: 5px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  resize: none;
+}
+.frmAdd span {
+  margin: 5px 20px;
+}
+.From,
+.to {
+  margin: 0px 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.to {
+  margin-bottom: 20px;
+}
+.task_title {
+  font-weight: bold;
+  font-size: 19px;
+  margin: 5px 10px;
+}
+.task_des {
+  text-align: left;
+}
+.draghere {
+  width: 95%;
+  height: 50px;
+  border: 2px dashed white;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 2vh;
+  display: none;
+  transition: 0.5s;
+}
+.detailsTaskOnP {
+  animation: fade 1s ease-in-out;
+  margin: 10px 20px;
+}
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

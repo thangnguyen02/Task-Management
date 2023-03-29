@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-content {
+    overflow-x: hidden;
+}
+.nav-bar {
+    width: 20%;
+    background-color: white;
+    height: 100%;
+    float: left;
+}
+.navbar-menu {
+    list-style-type: none;    
+}
+
+.navbar-menu .link {
+    width: 100%;
+    text-align: left;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+.navbar-menu .link:hover > .router-link, .isActive > .router-link  {  
+    color: rgb(0, 0, 0) !important;
+}
+.navbar-menu .link:hover,
+ .isActive,
+ .listitems:hover {  
+    color: rgb(0, 0, 0) !important;
+    border-right: 2px solid black !important;
+}
+
+.navbar-menu .link span {
+    font-size: 20px;
+    width: 100%;
+}
+.icons-nav {
+    font-size: 30px;
+    margin-right: 6px;
+}
+.icons-nav-d{
+    font-size: 20px;
+    margin-right: 19px;
+}
+.plus {
+    font-size: 30px;
+    transform: translate(120%,25%);
+    border-radius: 50%;
+}
+.plus:hover {
+    color: black;
+}
+.project-name,.project-description {
+    margin: 20px 30px;
+}
+#modal-footer {
+    text-align: right;
+    margin: 10px 20px;
+}
+.icons-setting {
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: none;
+}
+.listitems {
+    padding: 10px auto !important;
+    margin: 10px 0 !important;
+}
+
+.listitems:hover > .icons-setting{
+    display: block;
+}
+.icons-setting:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+
+}
+.router-link {
+    text-decoration: none;
+    color: #ADADAD;
+}
+.hide {
+    color: white !important;
+}

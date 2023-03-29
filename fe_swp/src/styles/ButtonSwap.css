@@ -1,0 +1,138 @@
+.buttonSwapp{
+    
+    height: 100%;
+}
+.grid-list-button {
+	padding: 8px;
+	border: 0;
+	border-radius: 8px;
+	background-color: var(--cl-3);
+	outline: none;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+.grid-list-button:hover {
+	background-color: --cl-3;
+}
+.grid-list-button:active {
+	transform: scale(.9);
+}
+
+.grid-list-button .icon {
+	position: relative;
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+
+.grid-list-button .dots i {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 2px;
+	background-color: #ffffff;
+	animation-duration: .4s;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
+}
+.grid-list-button.list .dots i {
+	animation-direction: normal;
+}
+.grid-list-button .dots i:nth-child(1) {
+	left: 0;
+	top: 0;
+}
+.grid-list-button .dots i:nth-child(2) {
+	left: 14px;
+	top: 0;
+}
+.grid-list-button .dots i:nth-child(3) {
+	left: 0;
+	top: 14px;
+}
+.grid-list-button .dots i:nth-child(4) {
+	left: 14px;
+	top: 14px;
+}
+.grid-list-button.animation .dots i:nth-child(1),
+.grid-list-button.animation .dots i:nth-child(3) {
+	animation-name: dotScale;
+}
+.grid-list-button.animation .dots i:nth-child(2),
+.grid-list-button.animation .dots i:nth-child(4) {
+	animation-name: dotScale, dotMove;
+}
+@keyframes dotScale {
+	0% {
+		width: 10px;
+		height: 10px;
+	}
+	100% {
+		width: 5px;
+		height: 5px;
+	}
+}
+@keyframes dotMove {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(0, 7px);
+	}
+	100% {
+		transform: translate(-14px, 7px);
+	}
+}
+
+.grid-list-button .lines i {
+	position: absolute;
+	right: 0;
+	width: 16px;
+	height: 3px;
+	border-radius: 2px;
+	background-color: #ffffff;
+	animation-duration: .4s;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
+	transform-origin: 100% 0;
+	transform: scaleX(0);
+}
+.grid-list-button.list .lines i {
+	animation-direction: normal;
+}
+.grid-list-button .lines i:nth-child(1) {
+	top: 1px;
+}
+.grid-list-button .lines i:nth-child(2) {
+	top: 8px;
+}
+.grid-list-button .lines i:nth-child(3) {
+	top: 15px;
+}
+.grid-list-button .lines i:nth-child(4) {
+	top: 22px;
+}
+.grid-list-button.animation .lines i:nth-child(1),
+.grid-list-button.animation .lines i:nth-child(3) {
+	animation-name: lineScale1;
+}
+.grid-list-button.animation .lines i:nth-child(2),
+.grid-list-button.animation .lines i:nth-child(4) {
+	animation-name: lineScale2;
+}
+@keyframes lineScale1 {
+	0%, 20% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+@keyframes lineScale2 {
+	0%, 50% {
+		transform: scaleX(0);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
